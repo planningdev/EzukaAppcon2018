@@ -14,6 +14,7 @@
 		1148D089218DE6A800B0213E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148D087218DE6A800B0213E /* LaunchScreen.storyboard */; };
 		1148D094218DE6A800B0213E /* EzukaAppcon2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D093218DE6A800B0213E /* EzukaAppcon2018Tests.swift */; };
 		1148D09F218DE6A800B0213E /* EzukaAppcon2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D09E218DE6A800B0213E /* EzukaAppcon2018UITests.swift */; };
+		1148D0AE218DE82A00B0213E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D0AD218DE82A00B0213E /* QRCodeReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1148D09A218DE6A800B0213E /* EzukaAppcon2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EzukaAppcon2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148D09E218DE6A800B0213E /* EzukaAppcon2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzukaAppcon2018UITests.swift; sourceTree = "<group>"; };
 		1148D0A0218DE6A800B0213E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1148D0AD218DE82A00B0213E /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1148D0AE218DE82A00B0213E /* QRCodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				1148D092218DE6A800B0213E /* EzukaAppcon2018Tests */,
 				1148D09D218DE6A800B0213E /* EzukaAppcon2018UITests */,
 				1148D07C218DE6A600B0213E /* Products */,
+				1148D0AC218DE82900B0213E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			path = EzukaAppcon2018UITests;
 			sourceTree = "<group>";
 		};
+		1148D0AC218DE82900B0213E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0AD218DE82A00B0213E /* QRCodeReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +147,7 @@
 				1148D077218DE6A600B0213E /* Sources */,
 				1148D078218DE6A600B0213E /* Frameworks */,
 				1148D079218DE6A600B0213E /* Resources */,
+				1148D0AF218DE83700B0213E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +263,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1148D0AF218DE83700B0213E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1148D077218DE6A600B0213E /* Sources */ = {
@@ -434,6 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MTZVUAQ6V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EzukaAppcon2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MTZVUAQ6V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EzukaAppcon2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
