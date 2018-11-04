@@ -16,6 +16,8 @@
 		1148D0AE218DE82A00B0213E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D0AD218DE82A00B0213E /* QRCodeReader.framework */; };
 		1148D0B1218EBADF00B0213E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B0218EBADF00B0213E /* FirstViewController.swift */; };
 		1148D0B3218EBE3200B0213E /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B2218EBE3200B0213E /* AppListViewController.swift */; };
+		1148D0B6218EE07F00B0213E /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */; };
+		1148D0B7218EE07F00B0213E /* AppCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1148D0AD218DE82A00B0213E /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 		1148D0B0218EBADF00B0213E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1148D0B2218EBE3200B0213E /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
+		1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
+		1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				1148D07E218DE6A600B0213E /* AppDelegate.swift */,
 				1148D082218DE6A600B0213E /* Main.storyboard */,
+				1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */,
+				1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */,
 				1148D0B0218EBADF00B0213E /* FirstViewController.swift */,
 				1148D085218DE6A800B0213E /* Assets.xcassets */,
 				1148D0B2218EBE3200B0213E /* AppListViewController.swift */,
@@ -247,6 +253,7 @@
 			files = (
 				1148D089218DE6A800B0213E /* LaunchScreen.storyboard in Resources */,
 				1148D086218DE6A800B0213E /* Assets.xcassets in Resources */,
+				1148D0B7218EE07F00B0213E /* AppCollectionViewCell.xib in Resources */,
 				1148D084218DE6A600B0213E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 			files = (
 				1148D07F218DE6A600B0213E /* AppDelegate.swift in Sources */,
 				1148D0B1218EBADF00B0213E /* FirstViewController.swift in Sources */,
+				1148D0B6218EE07F00B0213E /* AppCollectionViewCell.swift in Sources */,
 				1148D0B3218EBE3200B0213E /* AppListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
