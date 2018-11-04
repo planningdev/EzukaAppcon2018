@@ -1,9 +1,0 @@
-{
-  "commitish" : "9.0.1",
-  "iOS" : [
-    {
-      "name" : "QRCodeReader",
-      "hash" : "93ba315f3ab72a99c9de12f5c71a42d7e8ecfa0fb847ff25cf8eddc02bb596ca"
-    }
-  ]
-}
