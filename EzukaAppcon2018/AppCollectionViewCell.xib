@@ -12,38 +12,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCell" id="gTV-IL-0wX" customClass="AppCollectionViewCell" customModule="EzukaAppcon2018" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="296" height="424"/>
+            <rect key="frame" x="0.0" y="0.0" width="335" height="308"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="296" height="424"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="308"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="820-bh-VTQ" userLabel="Content View">
-                        <rect key="frame" x="0.0" y="0.0" width="296" height="424"/>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="308"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J5t-9G-uDW">
-                                <rect key="frame" x="0.0" y="0.0" width="296" height="424"/>
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="308"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egf-oh-jB6">
-                                        <rect key="frame" x="0.0" y="0.0" width="296" height="296"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="207"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="egf-oh-jB6" secondAttribute="height" multiplier="1:1" id="JGz-hZ-c7A"/>
+                                            <constraint firstAttribute="width" secondItem="egf-oh-jB6" secondAttribute="height" multiplier="1.618:1" id="Q6T-Mr-8Hj"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVd-wq-Ya5">
-                                        <rect key="frame" x="0.0" y="296" width="296" height="128"/>
+                                        <rect key="frame" x="0.0" y="207" width="335" height="101"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="21" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9k-jf-NZY">
-                                                <rect key="frame" x="16" y="8" width="264" height="112"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="13" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9k-jf-NZY">
+                                                <rect key="frame" x="16" y="8" width="303" height="85"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="appName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGZ-KI-cJU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="56.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="47"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teamName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-jw-bY2">
-                                                        <rect key="frame" x="0.0" y="56" width="83" height="56"/>
+                                                        <rect key="frame" x="0.0" y="38.5" width="83" height="46.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -60,6 +60,9 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="egf-oh-jB6" firstAttribute="width" secondItem="J5t-9G-uDW" secondAttribute="width" id="JxN-au-5sA"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,13 +83,13 @@
                 <constraint firstAttribute="bottom" secondItem="820-bh-VTQ" secondAttribute="bottom" id="ViK-Jd-ebh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="296" height="424"/>
+            <size key="customSize" width="335" height="308"/>
             <connections>
                 <outlet property="appImage" destination="egf-oh-jB6" id="Yw3-Zd-PxA"/>
                 <outlet property="appNameLabel" destination="zGZ-KI-cJU" id="LY1-cC-68w"/>
                 <outlet property="teamNameLabel" destination="Bn0-jw-bY2" id="NVJ-Ep-SCU"/>
             </connections>
-            <point key="canvasLocation" x="148.80000000000001" y="266.26686656671666"/>
+            <point key="canvasLocation" x="180" y="242.87856071964021"/>
         </collectionViewCell>
     </objects>
 </document>
