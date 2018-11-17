@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11164B1C2193E5B40029E01F /* SelectVoteKindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11164B1B2193E5B40029E01F /* SelectVoteKindViewController.swift */; };
 		1148D07F218DE6A600B0213E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D07E218DE6A600B0213E /* AppDelegate.swift */; };
 		1148D084218DE6A600B0213E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148D082218DE6A600B0213E /* Main.storyboard */; };
 		1148D086218DE6A800B0213E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1148D085218DE6A800B0213E /* Assets.xcassets */; };
@@ -18,9 +19,14 @@
 		1148D0B3218EBE3200B0213E /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B2218EBE3200B0213E /* AppListViewController.swift */; };
 		1148D0B6218EE07F00B0213E /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */; };
 		1148D0B7218EE07F00B0213E /* AppCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */; };
-		1148D0B9218F19F300B0213E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0B8218F19F300B0213E /* DetailViewController.swift */; };
 		1148D0BE218F1A9200B0213E /* AppImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0BC218F1A9200B0213E /* AppImageCollectionViewCell.swift */; };
 		1148D0BF218F1A9200B0213E /* AppImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148D0BD218F1A9200B0213E /* AppImageCollectionViewCell.xib */; };
+		1148D0C32190C0D600B0213E /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0C22190C0D600B0213E /* AppDetailViewController.swift */; };
+		1148D0C52190C79000B0213E /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0C42190C79000B0213E /* CustomCollectionViewFlowLayout.swift */; };
+		1148D0C92190CEC500B0213E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0C82190CEC500B0213E /* AppModel.swift */; };
+		1148D0CB2190CEEF00B0213E /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0CA2190CEEF00B0213E /* ItemEntity.swift */; };
+		1148D0CD2190E38800B0213E /* VoteStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0CC2190E38800B0213E /* VoteStatusEntity.swift */; };
+		1148D0CF2190F9A100B0213E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148D0CE2190F9A000B0213E /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11164B1B2193E5B40029E01F /* SelectVoteKindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVoteKindViewController.swift; sourceTree = "<group>"; };
 		1148D07B218DE6A600B0213E /* EzukaAppcon2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzukaAppcon2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148D07E218DE6A600B0213E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1148D083218DE6A600B0213E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,9 +65,14 @@
 		1148D0B2218EBE3200B0213E /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
 		1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
 		1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCollectionViewCell.xib; sourceTree = "<group>"; };
-		1148D0B8218F19F300B0213E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1148D0BC218F1A9200B0213E /* AppImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		1148D0BD218F1A9200B0213E /* AppImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		1148D0C22190C0D600B0213E /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		1148D0C42190C79000B0213E /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		1148D0C82190CEC500B0213E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		1148D0CA2190CEEF00B0213E /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
+		1148D0CC2190E38800B0213E /* VoteStatusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteStatusEntity.swift; sourceTree = "<group>"; };
+		1148D0CE2190F9A000B0213E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +127,13 @@
 			children = (
 				1148D07E218DE6A600B0213E /* AppDelegate.swift */,
 				1148D082218DE6A600B0213E /* Main.storyboard */,
-				1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */,
-				1148D0B8218F19F300B0213E /* DetailViewController.swift */,
-				1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */,
-				1148D0B0218EBADF00B0213E /* FirstViewController.swift */,
-				1148D0BC218F1A9200B0213E /* AppImageCollectionViewCell.swift */,
-				1148D0BD218F1A9200B0213E /* AppImageCollectionViewCell.xib */,
+				11AEA9752194595600051802 /* Models */,
+				11AEA9742194594800051802 /* Entities */,
+				11AEA9732194593800051802 /* Utility */,
+				1148D0C62190CC5800B0213E /* Components */,
+				1148D0C72190CC7A00B0213E /* ViewControllers */,
+				1148D0C42190C79000B0213E /* CustomCollectionViewFlowLayout.swift */,
 				1148D085218DE6A800B0213E /* Assets.xcassets */,
-				1148D0B2218EBE3200B0213E /* AppListViewController.swift */,
 				1148D087218DE6A800B0213E /* LaunchScreen.storyboard */,
 				1148D08A218DE6A800B0213E /* Info.plist */,
 			);
@@ -153,6 +164,53 @@
 				1148D0AD218DE82A00B0213E /* QRCodeReader.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1148D0C62190CC5800B0213E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0B4218EE07F00B0213E /* AppCollectionViewCell.swift */,
+				1148D0B5218EE07F00B0213E /* AppCollectionViewCell.xib */,
+				1148D0BD218F1A9200B0213E /* AppImageCollectionViewCell.xib */,
+				1148D0BC218F1A9200B0213E /* AppImageCollectionViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1148D0C72190CC7A00B0213E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0B0218EBADF00B0213E /* FirstViewController.swift */,
+				1148D0C22190C0D600B0213E /* AppDetailViewController.swift */,
+				11164B1B2193E5B40029E01F /* SelectVoteKindViewController.swift */,
+				1148D0B2218EBE3200B0213E /* AppListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11AEA9732194593800051802 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0CE2190F9A000B0213E /* Router.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		11AEA9742194594800051802 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0CC2190E38800B0213E /* VoteStatusEntity.swift */,
+				1148D0CA2190CEEF00B0213E /* ItemEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		11AEA9752194595600051802 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1148D0C82190CEC500B0213E /* AppModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +369,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1148D0CF2190F9A100B0213E /* Router.swift in Sources */,
+				1148D0CB2190CEEF00B0213E /* ItemEntity.swift in Sources */,
 				1148D07F218DE6A600B0213E /* AppDelegate.swift in Sources */,
 				1148D0B1218EBADF00B0213E /* FirstViewController.swift in Sources */,
+				11164B1C2193E5B40029E01F /* SelectVoteKindViewController.swift in Sources */,
+				1148D0C52190C79000B0213E /* CustomCollectionViewFlowLayout.swift in Sources */,
+				1148D0C92190CEC500B0213E /* AppModel.swift in Sources */,
 				1148D0BE218F1A9200B0213E /* AppImageCollectionViewCell.swift in Sources */,
-				1148D0B9218F19F300B0213E /* DetailViewController.swift in Sources */,
+				1148D0CD2190E38800B0213E /* VoteStatusEntity.swift in Sources */,
+				1148D0C32190C0D600B0213E /* AppDetailViewController.swift in Sources */,
 				1148D0B6218EE07F00B0213E /* AppCollectionViewCell.swift in Sources */,
 				1148D0B3218EBE3200B0213E /* AppListViewController.swift in Sources */,
 			);

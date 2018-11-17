@@ -1,5 +1,5 @@
 //
-//  AppCollectionViewCell.swift
+//  AppImageCollectionViewCell.swift
 //  EzukaAppcon2018
 //
 //  Created by Atsushi KONISHI on 2018/11/04.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class AppCollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var appImage: UIImageView!
-    @IBOutlet weak var appNameLabel: UILabel!
-    @IBOutlet weak var teamNameLabel: UILabel!
+class AppImageCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var appImageView: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,12 +20,16 @@ class AppCollectionViewCell: UICollectionViewCell {
         self.contentView.layer.borderColor = UIColor.lightGray.cgColor
         self.contentView.layer.borderWidth = 1
         self.contentView.layer.masksToBounds = true
+        activityIndicator.isHidden = true
     }
     
     func setup() {
-        appImage.image = UIImage(named: "EzukaAppconLogo")
-        appNameLabel.text = "testApp"
-        teamNameLabel.text = "testTeam"
+        appImageView.image = UIImage(named: "EzukaAppconLogo")
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.appImageView.image = nil
     }
 
 }
