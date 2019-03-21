@@ -15,8 +15,9 @@ enum Router {
     case voteIdea(id: Int)
     case fetchVoteStatus(token: String)
     case fetchAppImage(imagePath: String)
-    
-    static let baseURL = "https://staging.voteapp2018.planningdev.com"
+
+    static let baseURL = "https://voteapp2018.planningdev.com"
+//    static let baseURL = "https://staging.voteapp2018.planningdev.com"
     static let sufix = "/api/v1"
     
     var method: String {
@@ -43,7 +44,7 @@ enum Router {
         case .voteApp(let id):
             return "/apps/\(id.description)/vote"
         case .voteIdea(let id):
-            return "/idea/\(id.description)/vote"
+            return "/ideas/\(id.description)/vote"
         case .fetchVoteStatus(let token):
             return "/vote_tokens/\(token)"
         case .fetchAppImage(let imagePath):

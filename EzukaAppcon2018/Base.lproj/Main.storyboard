@@ -18,31 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EzukaAppconLogo" translatesAutoresizingMaskIntoConstraints="NO" id="U34-gA-Mos">
-                                <rect key="frame" x="77" y="100" width="614" height="256"/>
+                                <rect key="frame" x="77" y="84" width="614" height="307"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="U34-gA-Mos" secondAttribute="height" multiplier="2.4:1" id="EZF-B8-cUs"/>
+                                    <constraint firstAttribute="width" secondItem="U34-gA-Mos" secondAttribute="height" multiplier="2:1" id="EZF-B8-cUs"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票はこちらから" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlP-KR-rPp">
-                                <rect key="frame" x="191" y="420" width="386" height="57.5"/>
+                                <rect key="frame" x="191" y="455" width="386" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="76j-oY-9PO">
-                                <rect key="frame" x="269" y="533.5" width="230" height="230.5"/>
+                                <rect key="frame" x="269" y="568.5" width="230" height="230.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="76j-oY-9PO" secondAttribute="height" id="nqz-Qj-wFf"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面をタップしてください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-gh-GK9">
-                                <rect key="frame" x="202" y="828" width="364" height="36"/>
+                                <rect key="frame" x="202" y="863" width="364" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-wa-IW5">
-                                <rect key="frame" x="184.5" y="920" width="399" height="51"/>
+                                <rect key="frame" x="184.5" y="955" width="399" height="51.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKr-fu-rFf">
                                         <rect key="frame" x="0.0" y="17" width="102.5" height="17"/>
@@ -51,7 +51,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PDIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-ka-c98">
-                                        <rect key="frame" x="117.5" y="0.0" width="281.5" height="51"/>
+                                        <rect key="frame" x="117.5" y="0.0" width="281.5" height="51.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GKi-ka-c98" secondAttribute="height" multiplier="5.5:1" id="lbX-OV-ssC"/>
                                         </constraints>
@@ -71,7 +71,7 @@
                             <constraint firstItem="ewI-gh-GK9" firstAttribute="top" secondItem="76j-oY-9PO" secondAttribute="bottom" constant="64" id="35r-YI-gqZ"/>
                             <constraint firstItem="U34-gA-Mos" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Af-Zs-idr"/>
                             <constraint firstItem="N2X-wa-IW5" firstAttribute="top" secondItem="ewI-gh-GK9" secondAttribute="bottom" constant="56" id="5hG-RD-77O"/>
-                            <constraint firstItem="U34-gA-Mos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="6Zv-TO-xfp"/>
+                            <constraint firstItem="U34-gA-Mos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="6Zv-TO-xfp"/>
                             <constraint firstItem="2lt-b6-wVH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CGB-NT-3wQ"/>
                             <constraint firstItem="SlP-KR-rPp" firstAttribute="top" secondItem="U34-gA-Mos" secondAttribute="bottom" constant="64" id="GhU-3x-eEn"/>
                             <constraint firstItem="N2X-wa-IW5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.52" id="HvY-pg-gzF"/>
@@ -413,7 +413,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EzukaAppconLogo" width="300" height="125"/>
+        <image name="EzukaAppconLogo" width="567" height="284"/>
         <image name="PDIcon" width="1787" height="319"/>
         <image name="voteIcon" width="512" height="512"/>
     </resources>

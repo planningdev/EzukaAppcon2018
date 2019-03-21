@@ -14,15 +14,6 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var tapLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    lazy var readerVC: QRCodeReaderViewController = {
-        let builder = QRCodeReaderViewControllerBuilder {
-            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
-        }
-        
-        return QRCodeReaderViewController(builder: builder)
-    }()
-    
     let appModel = AppModel()
     
     override func viewDidLoad() {
@@ -58,6 +49,13 @@ class FirstViewController: UIViewController {
     }
     
     @objc func toQRCodeReaderView() {
+        let readerVC: QRCodeReaderViewController = {
+            let builder = QRCodeReaderViewControllerBuilder {
+                $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .front)
+            }
+            return QRCodeReaderViewController(builder: builder)
+        }()
+        
         readerVC.delegate = self
         
         // Presents the readerVC as modal form sheet

@@ -90,6 +90,7 @@ class AppDetailViewController: UITableViewController {
             alertController.dismiss(animated: true, completion: nil)
             self.activityIndicator.startAnimating()
             guard let token = self.token, let app = self.app else { return }
+            print("\(self.itemKind) in Detail")
             self.appModel.voteItem(token, targetId: app.id!, kind: self.itemKind,
                                    onSuccess: { [weak self] in
                                     DispatchQueue.main.async {
@@ -163,6 +164,23 @@ class AppDetailViewController: UITableViewController {
             activityIndicator.frame = CGRect(x: scrollView.contentOffset.x, y: scrollView.contentOffset.y, width: activityIndicator.frame.width, height: activityIndicator.frame.height)
             
             print("scrolled")
+        }
+    }
+    
+    private func isActiveVote() {
+        switch itemKind {
+        case .app:
+            guard let appStatus = voteStatus?.app else { return }
+            if !appStatus {
+                self.voteButton.isEnabled = false
+                self.voteButton.alpha = 0.5
+            }
+        case .idea:
+            guard let ideaStatus = voteStatus?.idea else { return }
+            if !ideaStatus {
+                self.voteButton.isEnabled = false
+                self.voteButton.alpha = 0.5
+            }
         }
     }
     

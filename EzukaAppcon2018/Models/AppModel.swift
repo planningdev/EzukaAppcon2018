@@ -41,12 +41,12 @@ class AppModel: NSObject {
                         results = json["ideas"] as! [[String:Any]]
                     }
 //                    let results = json["apps"] as! [[String:Any]]
-                    let apps: [ItemEntity] = results.map{ result -> ItemEntity in
-                        let appData = try! JSONSerialization.data(withJSONObject: result, options: [])
-                        return try! JSONDecoder().decode(ItemEntity.self, from: appData)
+                    let items: [ItemEntity] = results.map{ result -> ItemEntity in
+                        let itemData = try! JSONSerialization.data(withJSONObject: result, options: [])
+                        return try! JSONDecoder().decode(ItemEntity.self, from: itemData)
                     }
-                    print(apps)
-                    onSuccess(apps)
+                    print(items)
+                    onSuccess(items)
                 } catch let e {
                     print(e)
                     onError()

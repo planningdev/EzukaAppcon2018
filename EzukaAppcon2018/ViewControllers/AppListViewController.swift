@@ -22,6 +22,7 @@ class AppListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        print("\(self.itemKind) in Detail")
     }
     
     override func viewWillAppear(_ animated: Bool) {
